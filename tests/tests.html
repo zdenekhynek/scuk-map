@@ -1,0 +1,107 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>QUnit Test Suite</title>  
+    <link rel="stylesheet" href="qunit-1.10.0.css" type="text/css" media="screen">  
+    <script type="text/javascript" src="qunit-1.10.0.js"></script>  
+    <!-- Your project file goes here -->  
+    <!--<script type="text/javascript" src="myProject.js"></script>  -->
+    <!-- Your tests file goes here -->  
+ 	
+    <!--<link rel="stylesheet" href="../css/styles.css" />-->
+    <style>
+    	#map { width: 300px; height: 300px; }
+      .userLocationControl div {
+        width: 19px;
+        height: 19px;
+        background-image: url( "../images/userLocationControlSprite.png" );
+        background-repeat: no-repeat;
+      }
+
+    </style>
+	 <script src="../js/libs/modernizr-2.5.3.min.js"></script>
+  
+</head>  
+<body>  
+    <h1 id="qunit-header">QUnit Test Suite</h1>  
+    <h2 id="qunit-banner"></h2>  
+    <div id="qunit-testrunner-toolbar"></div>  
+    <h2 id="qunit-userAgent"></h2>  
+    <ol id="qunit-tests"></ol>  
+    <header>
+  </header>
+  <div id="map">
+  </div>
+  <section class="userLocationControl">
+      <div id="userLocationControl"></div>
+  </section>
+  <section class="autoComplete">
+    <form>
+        <input id="autoComplete" type="text" placeholder="Napiš adresu" size="30" />
+    </form>
+  </section>
+  <section class="typeSelector">
+    <select id="typeSelector">
+      <option value="0">Vše</option>
+      <option value="1">Restaurace</option>
+      <option value="3">Kavárny</option>
+      <option value="8">Cukrárny</option>
+      <option value="6">Lahůdky</option>
+      <option value="5">Ovozel</option>
+      <option value="4">Maso</option>
+      <option value="11">Ryby</option>
+      <option value="2">Pekárny</option>
+      <option value="9">Farmy</option>
+      <option value="7">Nápoje</option>
+    </select>
+  </section>
+ <footer></footer>
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.js"><\/script>')</script>
+  	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB7MKCUedN9wCarH7GOll39ffkYwZjyHbk&sensor=false&amp;libraries=places,geometry"> </script>
+ 
+   <script src="../js/libs/LAB.min.js"></script>
+	<script src="../js/libs/jquery.ba-bbq.js"></script>
+	<script src="../js/libs/purl.js"></script>
+	<script src="../js/libs/jquery.cookie.js"></script>
+	<script src="../js/libs/markerclusterer.js"></script>
+	<script src="../js/libs/jquery.geocomplete.js"></script>
+  <script src="../js/libs/infobox.js"></script>
+
+	<script src="../js/global.js"> </script>
+
+	<script src="../js/utils/GeoUtil.js"> </script>
+	<script src="../js/utils/DataUtil.js"> </script>
+	<script src="../js/utils/TextUtil.js"> </script>
+
+  <script src="../js/model/DataCache.js"> </script>
+  <script src="../js/model/SimpleDataProxy.js"> </script>
+  <script src="../js/model/DataProxy.js"> </script>
+  <script src="../js/model/DataLocalStorage.js"> </script>
+  <script src="../js/model/Model.js"> </script>
+   
+	<script src="../js/controller/Controller.js"> </script> 
+	
+  <script src="../js/view/markers/MarkerGridOverlay.js"> </script>
+  <script src="../js/view/UserLocationControl.js"> </script> 
+	<script src="../js/view/HashNavigator.js"> </script>
+	<script src="../js/view/AutoComplete.js"> </script>
+  <script src="../js/view/CustomInfoWindow.js"> </script>
+  <script src="../js/view/InfoWindow.js"> </script>
+	<script src="../js/view/TypeSelector.js"> </script>
+	<script src="../js/view/markers/MarkersImages.js"> </script> 
+	<script src="../js/view/markers/MarkerManager.js"> </script> 
+	<script src="../js/view/markers/Marker.js"> </script>  
+	<script src="../js/view/Map.js"> </script>
+	<script src="../js/view/View.js"> </script> 
+	  
+	<script src="../js/App.js"> </script>
+
+	<script src="../js/plugins.js"> </script>
+  <!--  <script src="../js/script.js"> </script> -->
+
+  <script type="text/javascript" src="QueuedUnit.js"></script>
+  	<script type="text/javascript" src="tests.js"></script>
+</body>  
+</html>

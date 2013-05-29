@@ -1,0 +1,67 @@
+.infoWindow {
+	
+	.icons {
+		
+		.score[ data-score="0" ]{
+			background: url( "../images/score-icon-0.png" );
+		}
+
+		.score[ data-score="1" ]{
+			background: url( "../images/score-icon-1.png" );
+		}
+
+		.score[ data-score="2" ]{
+			background: url( "../images/score-icon-2.png" );
+		}
+		
+		.score[ data-score="3" ]{
+			background: url( "../images/score-icon-3.png" );
+		}
+		
+		.score[ data-score="4" ]{
+			background: url( "../images/score-icon-4.png" );
+		}
+		
+		.score[ data-score="5" ]{
+			background: url( "../images/score-icon-5.png" );
+		}
+
+		.level[ data-level="0" ]{
+			background: url( "../images/level-icon-0.png" );
+		}
+
+		.level[ data-level="1" ]{
+			background: url( "../images/level-icon-1.png" );
+		}
+		
+		.level[ data-level="2" ]{
+			background: url( "../images/level-icon-2.png" );
+		}
+		
+		.level[ data-level="3" ]{
+			background: url( "../images/level-icon-3.png" );
+		}
+
+		.level[ data-level="4" ]{
+			background: url( "../images/level-icon-4.png" );
+		}
+
+		.satisfaction[ data-satisfaction="null" ]{
+			background: url( "../images/satisfaction-icon-0.png" );
+		}
+
+		.satisfaction[ data-satisfaction="ko" ]{
+			background: url( "../images/satisfaction-icon-1.png" );
+		}
+		
+		.satisfaction[ data-satisfaction="neutral" ]{
+			background: url( "../images/satisfaction-icon-2.png" );
+		}
+
+		.satisfaction[ data-satisfaction="ok" ]{
+			background: url( "../images/satisfaction-icon-3.png" );
+		}
+		
+	}
+
+}

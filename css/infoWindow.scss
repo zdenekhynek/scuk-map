@@ -1,0 +1,85 @@
+/* info bubble */
+
+.infoBox {
+	
+	width: 12em;
+	background-color: #fff;
+	border: 1px solid gray;
+	padding: 15px;
+	
+	header {
+		overflow: hidden;
+	}
+
+	h1 {
+		margin: 0 10px 0 0;	
+	}
+
+	footer {
+		
+		a {
+			float: right;
+			border: 1px solid black;
+			padding: .25em 1em;
+			text-decoration: none;
+			color: black;
+			background-color: #ccc;
+		}
+
+		a:hover {
+			background-color: #eee;
+		}
+
+	}
+
+	.icons {
+		
+		span {
+			width: 30px;
+			height: 30px;
+			display: block;
+			float: left;
+			background-color: #f00;
+			margin-right:5px;
+		}
+
+	}
+
+
+	@media (max-width: 481px) {
+
+		p.desc {
+			display:none;
+		}
+
+		footer {
+
+			a {
+
+				float: left;	
+				width: 80%;
+				margin-left: 5%;
+				text-align: center;
+			}
+		}
+
+	}
+
+	@media (min-width: 481px) {
+
+		width: 20em;
+	
+	}
+
+	@media (min-width: 768px) {
+
+		width: 30em;
+
+		h1 {
+			float: left;
+		}
+
+
+	}
+
+}

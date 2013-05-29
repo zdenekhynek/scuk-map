@@ -1,0 +1,93 @@
+$controlTopMargin: 10px;
+$controlLeftMargin: 10px;
+
+#controls {
+	overflow: hidden;
+	padding: 10px;
+	padding-bottom: 0px;
+}
+
+#controls section {
+	float: left;
+	margin: 0px 5px;
+}
+
+.autoComplete {
+	
+}
+
+.autoComplete input {
+	height: 1em;
+	padding: .6em;
+}
+
+.typeSelector {
+
+}
+
+.typeSelector select {
+	width: 150px;
+	font-size: 1em;
+}
+
+/* user location control */
+.userLocationControl {
+	cursor: pointer;
+}
+
+.userLocationControl div {
+	width: 30px;
+	height: 30px;
+	background-image: url( "../images/userLocationControlSprite.png" );
+	background-repeat: no-repeat;
+}
+
+// Smartphony az tablet na vysku - centrovani atd.
+@media (max-width: 481px) {
+	
+	$secondRowTopMargin: 40px;
+
+	#controls {
+		width: 100%;
+		height: 70px;
+	}
+
+	#controls section {
+		float:none;
+	}
+
+	#controls section.autoComplete {
+		position: relative;
+		/*top: $secondRowTopMargin;*/
+		width: 74%;
+		float:left;
+		margin-top:35px;
+	}
+
+	.autoComplete input{
+		width: 100%;
+	}
+
+	#controls section.userLocationControl {
+		/*position: relative;
+		top: $secondRowTopMargin+3;
+		left: 5%;*/
+		float:left;
+		margin-top:35px;
+	}
+
+	#controls section.typeSelector {
+		width: 91%;
+		position: relative;
+		top: -65px;
+		/*position: relative;
+		top: $controlTopMargin;
+		left: 5%;*/
+	}
+
+	.typeSelector select {
+		width: 100%;
+	}
+	
+
+}
